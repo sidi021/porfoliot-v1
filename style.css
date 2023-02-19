@@ -1,0 +1,409 @@
+*{
+
+    box-sizing: border-box;
+ }       
+:root{
+        
+    --color1: #D89584;
+    --color2: #F4F4F4;
+
+}
+
+body{
+    margin: 0;
+    font-family: Arial;
+    line-height: 1.5; /*Ecart entre les lignes du text ( en Hauteur ) */
+
+ }
+
+iframe{
+
+    width: 100%;
+    border: none;
+    height: 350px;
+ }
+
+div.cover{
+
+    background: url(cover_overlay.png) no-repeat center/100% 100%,url(cover.jpg) no-repeat center/cover;
+    height: 350px;
+    position: relative;
+
+}
+
+img.cover-profile{
+    
+    height: 160px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 8px;
+}
+h1{
+
+    color: white;
+    text-align: center;
+    font-size: 39px;
+    margin-top: 8px ;
+    margin-bottom: 0px ;
+
+}
+
+div.cover p {
+    color: lightgrey;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+   
+}
+div.cover-contact{
+    position: absolute;
+    /*background-color: brown; */
+    top: 14px;
+    left: 10px;
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+}
+
+div.cover-contact p{
+
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+div.cover-contact p:first-child{  /*prend le premier fils paragraph de cover contacte */
+
+    margin-bottom: 14px;         
+}
+div.cover-contact *{
+
+    color: white;
+    font-size: 14px;
+
+}
+
+
+a.contact-button {
+    border: 2px solid var(--color1);
+    color: var(--color1);
+    text-decoration: none;
+    padding: 8px 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #00000080;
+    margin-bottom: 14px ;
+    margin-top: 8px;
+}
+
+a.contact-button-porfolio{
+    position: absolute ;
+    right: 20px;
+    top: 13px;
+}
+
+
+a.contact-button:hover {   /* Pour la souris*/
+   color: white;
+   border: 2px solid white;
+}
+
+.section{
+    overflow: auto;
+    padding-left: 40px ;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+div.section-grise1{
+
+    background: url(triangle2white.svg) no-repeat center bottom/100% ;
+    background-color: var(--color2);
+    height: 200px;
+    padding-bottom: 50px;
+}
+
+div.section-grise2{
+
+background: url(triangle1white.svg) no-repeat center top/100% ;
+background-color: var(--color2);
+padding-top: 150px;
+}
+
+h2{
+    text-align: center;
+    font-size: 34px;
+    margin-top:0px;
+}
+
+div.section-grise1 p{
+    color: #656565;
+    text-align: center;
+    font-size: 22px;
+    max-width: 470px;
+    margin-left: auto;  
+    margin-right: auto;  /* margin: auto === donne les valeurs zéro pour (top et Bottom) et donne une marge égale (50% left et 50% reight) d'une façon automatique*/
+
+}
+
+div.separateur{
+    background-color:  #979797;
+    width: 150px;
+    height: 1px;
+    position: relative;
+    left: 50%;
+    margin-left: -75px; /* a revoir !!*/
+    
+}
+
+div.col60{
+    width: 60%;
+    float: right;  /* Pour que le text float à la droite */
+
+}
+
+img.col40{
+    width: 40%;
+}
+
+div.text-lign-vertical{
+    padding-left: 2px;
+    border-left: 3px solid var(--color1);
+   /* height: 30px;*/
+}
+
+p.text-lign-vertical{
+    margin-top: 0;
+    padding-left: 10px;
+
+}
+
+div.barre-vertical{
+    
+    height: 60px;
+    width: 4px;
+    background-color: var(--color1);
+    margin-right: 8px;
+
+}
+
+.col-portfolio{
+    width: 48%
+}
+/*
+.notre-frame{
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    height:100%;
+    padding: 30px;
+
+     
+}
+*/
+div.frame{
+
+    margin: 30px 50px;
+    padding: 30px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, .1);
+
+}
+
+p.frame-title{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+img.image-frame{
+
+    width:160px;
+    height: 180px;
+}
+
+ 
+/* --- PORTFOLIO --- */
+.portfolio-hearder{
+    height: 90px;
+    margin-top: 0;
+    background: url(header.jpg) no-repeat center/cover;
+    position: relative;
+}
+
+.portfolio-hearder-title{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0%;
+    padding-left: 8px;
+    padding-top: 0 ;
+    
+}
+h1.portfolio-h1{
+  color: black;
+  font-size: 42px;
+  line-height: 1;
+  padding-top: 10px;
+
+}
+h2.portfolio-h2{
+    font-size: 18px;
+    font-weight: normal;
+    
+  }
+a.portfolio-back{
+    color: var(--color1);
+    position: absolute;
+    top: 2px;
+    left: 5px ;
+}
+
+
+
+
+img.image-contact{
+    width: 130px;
+    height: 130px;
+    
+}
+
+.table-contact{
+   
+    background-color: #656565;
+}
+
+/* ------------------   Responsive DESIGN Mobile -------------------*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  
+img.cover-profile{
+    
+    height: 87px;
+    margin-top: 77px;
+}
+
+h1{
+
+    font-size: 35px;
+    margin-top: 6px ;
+    margin-bottom: 0px ;
+
+}
+
+div.cover p {
+   
+    margin-top: 2px;
+    font-size: 14px;
+   
+}
+
+
+.section{
+
+    padding-left: 20px ;
+    padding-right: 20px;
+
+}
+
+div.section-grise1{
+
+    padding-bottom: 30px;
+}
+
+h2{
+
+    font-size: 30px;
+ 
+}
+
+div.col60{
+    width: 100%;
+    /*float: right;  Pour que le text float à la droite */
+
+}
+
+img.col40{
+    width: 100%;
+    padding: 20px;
+}
+
+.col-portfolio{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.frame{
+
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-shadow: none;
+
+}
+
+p.frame-title{
+    font-size: 23px;
+    font-weight:bold ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+img.image-frame{
+
+    width:160px;
+    height: 180px;
+    margin-top: 30px;
+}
+
+
+
+/* Header Phone*/
+
+.portfolio-hearder-title{
+    font-size: 18px;
+    margin-top: 0%;
+    padding-left: 8px;
+    padding-top: 9px ;
+    
+}
+
+a.contact-button {
+    padding: 7px 15px;
+    font-size: 12px;
+    margin-bottom: 10px ;
+    margin-top: 8px;
+}
+
+a.contact-button-porfolio{
+    right: 12px;
+    top: 13px;
+}
+
+h1.portfolio-h1{
+   
+    font-size: 40px;
+  
+}
+  h2.portfolio-h2{
+      font-size: 20px;
+      
+      
+}
+
+
+
+  
+
+
+
+
+/* ------- Fin --------- */
+}
